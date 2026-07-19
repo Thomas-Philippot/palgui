@@ -1,0 +1,9 @@
+services:
+  palgui:
+    container_name: palgui
+    build:
+      context: .
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
