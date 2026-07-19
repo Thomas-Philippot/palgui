@@ -19,7 +19,6 @@ FROM denoland/deno:latest AS prod
 WORKDIR /app
 
 ENV HOST=0.0.0.0
-ENV PORT=$PORT
 ENV NODE_ENV=production
 
 COPY --from=build /app/.output ./.output
